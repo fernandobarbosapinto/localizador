@@ -1,0 +1,84 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+        h1 Starcups
+    .row
+        .col-xs-12.col-sm-9
+            .row
+                .col-xs-12.col-sm-6
+                    p.rating
+                        span.glyphicon.glyphicon-star
+                        span.glyphicon.glyphicon-star
+                        span.glyphicon.glyphicon-star
+                        span.glyphicon.glyphicon-star-empty
+                        span.glyphicon.glyphicon-star-empty
+                        p 125 High Street, Reading, RG6 1PS
+                        .panel.panel-primary
+                            .panel-heading
+                                h2.panel-title Horário de Funcionamento
+                            .panel-body
+                                p Segunda à Sexta : 7:00am - 7:00pm
+                                p Sábado : 8:00am - 5:00pm
+                                p Sunday : closed
+                        .panel.panel-primary
+                            .panel-heading
+                                h2.panel-title Instalações
+                            .panel-body
+                                span.label.label-warning
+                                    span.glyphicon.glyphicon-ok
+                                    | &nbsp; Bebidas Quentes
+                                | &nbsp;
+                                span.label.label-warning
+                                    span.glyphicon.glyphicon-ok
+                                    | &nbsp; Comida
+                                | &nbsp;
+                                span.label.label-warning
+                                    span.glyphicon.glyphicon-ok
+                                    | &nbsp; Premium wifi
+                                | &nbsp;
+                .col-xs-12.col-sm-6.location-map
+                    .panel.panel-primary
+                        .panel-heading
+                            h2.panel-title Localização
+                        .panel-body
+                            img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
+            .row
+                .col-xs-12
+                    .panel.panel-primary.review-panel
+                        .panel-heading
+                            a.btn.btn-default.pull-right(href='/location/review/new') Adicionar Avaliação
+                            h2.panel-title Avaliações dos Clientes
+                        .panel-body.review-container
+                            .row
+                                .review
+                                    .well.well-sm.review-header
+                                        span.rating
+                                            span.glyphicon.glyphicon-star
+                                            span.glyphicon.glyphicon-star
+                                            span.glyphicon.glyphicon-star
+                                            span.glyphicon.glyphicon-star
+                                            span.glyphicon.glyphicon-star
+                                        span.reviewAuthor &nbsp; Pedro Mazza
+                                        small.reviewTimestamp &nbsp; 21 Junho 2013
+                                    .col-xs-12
+                                        p Que ótimo lugar. Só posso dizer coisas boas sobre esse estabelecimento.
+                            .row
+                                .review
+                                    .well.well-sm.review-header
+                                        span.rating
+                                            span.glyphicon.glyphicon-star
+                                            span.glyphicon.glyphicon-star
+                                            span.glyphicon.glyphicon-star
+                                            span.glyphicon.glyphicon-star
+                                            span.glyphicon.glyphicon-star
+                                        span.reviewAuthor &nbsp; Ana Clara Freire
+                                        small.reviewTimestamp &nbsp; 13 Novembro 2016
+                                    .col-xs-12
+                                        p Estava tudo bem. Café ótimo e o wifi rápido.
+        .col-xs-12.col-md-3
+            p.lead O café de Simon está no Loc8r! Venha fazer parte dessa família e aproveite o espaço para se sentar com seu laptop e tomar um café enquanto responde à seus emails.
+            p Se você esteve por aqui, deixe um comentário para ajudar outras pessoas como você.
+
+
